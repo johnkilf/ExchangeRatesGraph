@@ -1,0 +1,8 @@
+@(rates: Rates)
+
+@main("EUR-USD Exchange rates graph") {
+                <script type="text/javascript"> 
+                	var dataset = @Html(rates.getRates());
+                	generateGraph(dataset);
+                </script>    
+}
